@@ -6,23 +6,24 @@
 /*   By: ancibore <ancibore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/27 20:37:43 by ancibore          #+#    #+#             */
-/*   Updated: 2026/11/27 21:11:08 by ancibore         ###   ########.fr       */
+/*   Updated: 2026/11/27 21:45:13 by ancibore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int i;
+	int	i;
+
 	i = 0;
-	while(src[i] != '\0')
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
-
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -32,4 +33,4 @@ int	main(void)
 	ft_strcpy(str2, str1);
 	printf("%s", str2);
 	return 0;
-}
+}*/
